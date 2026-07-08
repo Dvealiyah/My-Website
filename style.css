@@ -647,3 +647,37 @@ html[dir="rtl"] .eyebrow {
     width: 100%;
   }
 }
+
+#experience {
+  margin-top: 1.35rem;
+  padding: clamp(1.4rem, 2.8vw, 2rem);
+}
+
+.stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.expanded-projects {
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card p {
+  flex: 1;
+}
+
+@media (max-width: 1080px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
